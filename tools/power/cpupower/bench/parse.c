@@ -60,7 +60,7 @@ FILE *prepare_output(const char *dirname)
 	if (dir == NULL) {
 		if (mkdir(dirname, 0755)) {
 			perror("mkdir");
-			fprintf(stderr, "error: Cannot create dir %s\n",
+			fprintf(stderr, "error: Cannot create directory %s\n",
 				dirname);
 			return NULL;
 		}
